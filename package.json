@@ -4,7 +4,8 @@
   "description": "A react component that generates a div with preset flex css settings.",
   "main": "lib/index.js",
   "scripts": {
-    "build:babel": "npm run build:clean && babel src -d lib",
+    "prepublish": "npm run build",
+    "build": "npm run build:clean && babel src -d lib",
     "build:clean": "rm -rf lib/"
   },
   "repository": {
