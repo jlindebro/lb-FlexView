@@ -1,6 +1,6 @@
 {
   "name": "lb-flex-view",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A react component that generates a div with preset flex css settings.",
   "main": "lib/index.js",
   "scripts": {
