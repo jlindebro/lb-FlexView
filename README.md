@@ -18,10 +18,10 @@ import { FlexView } from 'lb-flex-view'
 const Component = () => (
   <FlexView>
     <div>
-        Foo
+        Left
     </div>
     <div>
-        Bar
+        Right
     </div>
   </FlexView>
 )
@@ -36,10 +36,10 @@ import { FlexView } from 'lb-flex-view'
 const Component = () => (
   <FlexView style={{ flexDirection: 'column' }}>
     <div>
-        Foo
+        Top
     </div>
     <div>
-        Bar
+        Bottom
     </div>
   </FlexView>
 )
