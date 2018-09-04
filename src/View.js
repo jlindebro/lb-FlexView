@@ -3,10 +3,8 @@ import PropTypes from 'prop-types'
 
 
 /**
- * A View component defines the position for its child components.
- * For example, if you want to set margins and padding of a component
- * you should wrap it with a View component and put the paddings and
- * margins there.
+ * A View component will output a div (default) element. The idea of using
+ * View is to defines the position for its children in the DOM tree.
  */
 export class _View extends React.Component {
 

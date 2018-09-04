@@ -1,35 +1,39 @@
 {
-    "name": "lb-flex-view",
-    "version": "1.0.0",
-    "description": "A react component that generates a div with preset flex css settings.",
-    "main": "lib/index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "prepublish": "npm run compile",
-      "compile": "rm -rf lib/ && babel --out-dir lib/ src/"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/jlindebro/lb-FlexView.git"
-    },
-    "keywords": [
-      "Javascript",
-      "React",
-      "reactJS",
-      "Flex",
-      "css",
-      "jsx"
-    ],
-    "author": "jlindebro@gmail.com",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/jlindebro/lb-FlexView/issues"
-    },
-    "homepage": "https://github.com/jlindebro/lb-FlexViews#readme",
-    "peerDependencies": {
-      "react": "^16.0.0"
-    },
-    "devDependencies": {
-      "babel-cli": "^6.26.0"
-    }
-  }
+  "name": "lb-flex-view",
+  "version": "1.0.1",
+  "description": "A react component that generates a div with preset flex css settings.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:babel": "npm run build:clean && babel src -d lib",
+    "build:clean": "rm -rf lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlindebro/lb-FlexView.git"
+  },
+  "keywords": [
+    "Javascript",
+    "React",
+    "reactJS",
+    "Flex",
+    "css",
+    "jsx"
+  ],
+  "author": "jlindebro@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlindebro/lb-FlexView/issues"
+  },
+  "homepage": "https://github.com/jlindebro/lb-FlexViews#readme",
+  "peerDependencies": {
+    "react": "^16.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+  },
+  "dependencies": {}
+}

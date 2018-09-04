@@ -2,14 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import View from './View'
 
-  /**
- * A FlexView component combine View and Flex components. That means it
- * defines the position for its child components but also creates a flex
- * container of the wrapping element.
+
+/**
+ * A FlexView component will output a div (via View component)
+ * with preset Flex CSS settings.
  */
-export class _FlexView extends React.Component {
+export default class _FlexView extends React.Component {
 
   render() {
+
     const styles = {
       default: {
         height: '100%',
@@ -54,7 +55,9 @@ export class _FlexView extends React.Component {
     setProps.style = outputStyles
 
     return (
-      <View {...setProps}>
+      <View
+        {...setProps}
+      >
         {this.props.children}
       </View>
     )
@@ -86,4 +89,3 @@ _FlexView.propTypes = {
    */
   tagName: PropTypes.string,
 }
-export default _FlexView
