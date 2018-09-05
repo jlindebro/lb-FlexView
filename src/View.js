@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
  * A View component will output a div (default) element. The idea of using
  * View is to defines the position for its children in the DOM tree.
  */
-export class _View extends React.Component {
+export class View extends React.Component {
 
   render() {
     const styles = {
@@ -15,7 +15,8 @@ export class _View extends React.Component {
 				padding: 0,
 			},
     }
-		let setProps = this.props
+
+    let setProps = {...this.props}
 		setProps.style = {
 			...styles.default,
 			...this.props.style,
@@ -31,12 +32,12 @@ export class _View extends React.Component {
   }
 }
 
-_View.defaultProps = {
+View.defaultProps = {
   children: [],
   tagName: 'div',
   style: {},
 }
-_View.propTypes = {
+View.propTypes = {
   /**
    * Content of the view.
    */
@@ -60,4 +61,4 @@ _View.propTypes = {
   onClick: PropTypes.func,
 }
 
-export default _View
+export default View

@@ -51,7 +51,7 @@ export class FlexView extends React.Component {
       }
     }
 
-    let setProps = this.props
+    let setProps = {...this.props}
     setProps.style = outputStyles
 
     return (
