@@ -7,7 +7,7 @@ import View from './View'
  * A FlexView component will output a div (via View component)
  * with preset Flex CSS settings.
  */
-export default class _FlexView extends React.Component {
+export class FlexView extends React.Component {
 
   render() {
 
@@ -63,11 +63,11 @@ export default class _FlexView extends React.Component {
     )
   }
 }
-_FlexView.defaultProps = {
+FlexView.defaultProps = {
   tagName: 'div',
   style: {},
 }
-_FlexView.propTypes = {
+FlexView.propTypes = {
   /**
   * The content of the component
   */
@@ -89,3 +89,5 @@ _FlexView.propTypes = {
    */
   tagName: PropTypes.string,
 }
+
+export default FlexView

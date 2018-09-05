@@ -1,6 +1,6 @@
 {
   "name": "lb-flex-view",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "A react component that generates a div with preset flex css settings.",
   "main": "lib/index.js",
   "scripts": {
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0"

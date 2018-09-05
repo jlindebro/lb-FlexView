@@ -1,7 +1,3 @@
-import FlexView from './FlexView'
-import View from './View'
-
-export {
-    FlexView,
-    View,
-}
+export { FlexView } from './FlexView'
+export { View } from './View'
+export { default } from './FlexView'
